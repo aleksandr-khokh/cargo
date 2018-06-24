@@ -3,7 +3,7 @@
       <div class="row">
         <div class="col-lg-5 b-footer__left">
           <a href="/">
-            <img alt="" class="b-footer__logo-img" src="frontend/img/logo.png">
+            <img alt="" class="b-footer__logo-img" src="/frontend/img/logo.png">
           </a>
         </div>
         <div class="col-lg-7">
@@ -54,7 +54,7 @@
 
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="cbModalLabel">Перезвоним через 2 минуты</h5>
+        <h5 class="modal-title" id="cbModalLabel">Перезвоним в блжайшее время</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -71,10 +71,8 @@
         </div><!-- modal-body -->
 
         <div class="modal-footer">
-          <input type="submit" id="btn-submit" class="btn btn-secondary" value="Отправить заявку">
+          <input type="submit" id="btn-submit" class="btn b-btn_color_blue" value="Отправить заявку">
         </div><!-- modal-footer -->
-
-        <p class="desc small grey">Нажимая кнопку «Заказать звонок», Вы даете свое <a href="/privacy/" class="grey" target="_blank" title="Политика конфиденциальности">согласие на обработку персональных данных.</a></p>
       </form>
 
       <!-- result -->

@@ -1,0 +1,58 @@
+$white: white
+
+$blue: #0451a3
+$orange: #ff8004
+
+$yellow: #f1c40f
+
+$grey: #999
+
+$base-font-size: 16px
+
+.inline
+  display: inline
+
+.white 
+  color: $white
+
+.b-btn
+  display: inline-block
+  padding: 8px 24px
+  margin-bottom: 15px
+  cursor: pointer
+  color: $white
+  font-weight: bold
+  text-align: center
+  text-decoration: none
+
+  font-size: 16px
+
+  border-radius: 5px
+  border: 0
+
+  vertical-align: bottom
+  -webkit-transition: all .2s
+  transition: all .2s
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+.b-btn_color_yellow
+  background: $yellow
+.b-btn_color_yellow:hover, .b-btn_color_yellow:focus
+  background: darken($yellow, 5)
+.b-btn_color_yellow:active
+  background: darken($yellow, 10)
+
+.b-btn_color_blue
+  background: $blue
+  color: $white
+
+.b-btn_color_blue:hover,.b-btn_color_blue:focus
+  background: lighten($blue, 5)
+  color: $white
+
+.b-btn_color_blue:active
+  background: lighten($blue, 10)
+  color: $white

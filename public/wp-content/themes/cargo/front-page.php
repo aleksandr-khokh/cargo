@@ -4,8 +4,8 @@
   <div class="container">
     <div class="row">
       <div class="col b-work-map-line__inner">
-        <div class="b-work-map-line__text">
-          <h1 class="inline">Международные перевозки грузов</h1> из <a href="dostavka-gruzov-iz-evropy">Европы</a>, <a href="dostavka-gruzov-iz-kitaya">Китая</a> и <a href="dostavka-gruzov-iz-ameriki">Америки</a>.
+        <div class="b-work-map-line__text text-center">
+          <h1 class="d-inline-block text-center">Международные перевозки грузов</h1> из <a href="dostavka-gruzov-iz-evropy">Европы</a>, <a href="dostavka-gruzov-iz-kitaya">Китая</a> и <a href="dostavka-gruzov-iz-ameriki">Америки</a>.
         </div>
         <a class="b-work-map-line__link b-work-map-line__link_evro" href="dostavka-gruzov-iz-evropy"></a><a class="b-work-map-line__link b-work-map-line__link_usa" href="dostavka-gruzov-iz-ameriki"></a><a class="b-work-map-line__link b-work-map-line__link_china" href="dostavka-gruzov-iz-kitaya"></a>
       </div>
@@ -18,7 +18,7 @@
       <div class="row">
         <div class="col">
           <div class="b-services-line__header">
-            <h2 class="text-center">Наши услуги:</h2>
+            <h2 class="text-center">Мы работаем как с юридическими, так и с физическими лицами.</h2>
           </div>
           <div class="col w1-3">
             <a class="b_service_link" href="/sbornye-gruzy">Доставка сборных грузов</a>
@@ -40,14 +40,14 @@
                 'theme_location'  => 'country',
                 'container'       => 'div',
                 'container_class' => '',
-                'container_id'    => 'navbarSupportedContent',
-                'menu_class'      => 'menu nav',
+                'container_id'    => '',
+                'menu_class'      => 'menu row',
                 'fallback_cb'     => 'wp_page_menu',
                 'items_wrap'      => '<ul id="%1$s" class="%2$s" role="navigation">%3$s</ul>',
                 'depth'           => 2,
                 'echo' => 0
               ) );
-              $menu = str_replace('class="menu-item', 'class="menu-item nav-item', $menu);
+              $menu = str_replace('menu-item ', 'menu-item nav-item col-6 b-country-geography-list__item', $menu);
               $menu = str_replace('<a', '<a class="nav-link"', $menu);
               echo $menu;
               ?>
