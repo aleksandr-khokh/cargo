@@ -6,6 +6,7 @@
       <?php breadcrumb_bootstrap(); ?>
     </div>
   </div>
+
   <div class="row">
     <div class="col-12 col-lg-8 i-text-space">
     <?php

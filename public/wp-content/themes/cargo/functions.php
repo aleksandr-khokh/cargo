@@ -37,3 +37,30 @@ register_nav_menus(array(
     'aside_menu' => __('Мобильное меню'),
     'country' => __('Страны')
 )); 
+
+function shipping_date(){
+    
+    ob_start();
+
+    $month = array( 
+        1 => 
+        'Января', 
+        'Февраля', 
+        'Марта' , 
+        'Апреля' , 
+        'Мая' , 
+        'Июня' , 
+        'Июля', 
+        'Августа', 
+        'Сентября', 
+        'Октября', 
+        'Ноября',
+        'Декабря');
+    $date =  date('d', strtotime('next saturday')) . " " . $month[date('m', strtotime('next saturday'))];
+    
+
+    echo '<div class="row"><div class="col-12"><p class="i-align_center data-desc"><b>Ближайшая отправка сборного контейнера в Россию <span class="blue-date">' . $date . ' июня</span></b></p></div></div>';
+
+    return ob_get_clean();
+}
+add_shortcode('shipping', 'shipping_date');
