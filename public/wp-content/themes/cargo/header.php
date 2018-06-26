@@ -6,10 +6,17 @@
   content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" type="image/x-icon">
+  <link href="/frontend/img/link-icon/favicon.ico" rel="shortcut icon" />
 
-  <title><?php echo get_post_meta($post->ID, 'title', true); ?></title>
-  <meta name="keywords" content="<?php echo get_post_meta($post->ID, 'keywords', true); ?>">
-  <meta name="description" content="<?php echo get_post_meta($post->ID, 'description', true); ?>">
+  <link rel="apple-touch-icon" sizes="76x76" href="/frontend/img/link-icon/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/frontend/img/link-icon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/frontend/img/link-icon/apple-touch-icon-152x152.png" />
+  <meta name="msapplication-TileImage" content="/frontend/img/link-icon/windows-touch-icon-144x144.png" />
+  <meta name="msapplication-TileColor" content="#fff" />
+
+  <title><?php echo get_field('title'); ?></title>
+  <meta name="keywords" content="">
+  <meta name="description" content="<?php the_field('description'); ?>">
   <?php wp_head(); ?>
 
 </head>

@@ -60,7 +60,7 @@
         </button>
       </div>
 
-      <form action="/wp-content/themes/fishplanet/mail.php" method="POST">
+      <form action="/wp-content/themes/cargo/mail.php" method="POST" class="call-back-form">
         <div class="modal-body">
           <div class="form-group">
             <input type="text" class="form-control form-input-name" placeholder="Введите имя" name="name">

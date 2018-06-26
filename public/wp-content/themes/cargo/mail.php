@@ -1,13 +1,13 @@
 <?php
-$username = htmlspecialchars($_POST['name']);
+
+if(isset($_POST['name'])){$username = htmlspecialchars($_POST['name']);}
 $phone = htmlspecialchars($_POST['phone']);
-$comment = htmlspecialchars($_POST['comment']);
 
 
 if ( $phone ) {
 
   $to = 'office@spaceweb.studio';
-  $from='call-back@fishplanet.loc';
+  $from='call-back@carg-trading.ru';
 
   mail($to, $username, $message, 'From:'.$from);
 
