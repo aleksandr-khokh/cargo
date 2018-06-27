@@ -49,21 +49,25 @@
 
   <main id="container">
 
-      <div id="toggle-button" class="d-flex d-sm-none fixed-top">
+      <div id="toggle-button" class="d-block d-lg-none fixed-top">
         <!-- Menu Button -->
         <button class="menu-btn">&#9776; Меню</button>
       </div>
 
-      <header class="b-header">
-        <div class="container">
-          <div class="row b-header__inner"> <!-- все содержимое -->
+      <div class="d-lg-none mobile-header">
+        
+      </div>
 
-            <div class="col-md-4 b-header__left">
+      <header class="d-none d-lg-block b-header"><!-- все содержимое -->
+        <div class="container">
+          <div class="row b-header__inner"> 
+
+            <div class="col-lg-4 b-header__left">
               <a href="/"><img alt="" class="b-header__logo-img_big b-header_big" src="/frontend/img/logo.png" /></a><a href="/"><img alt="" class="b-header__logo-img_small b-header_small" src="/frontend/img/logo_small.png" /></a>
               <span class="b-work-since">Работаем с 1998 года</span>
             </div> <!-- лого -->
 
-            <div class="col-md-8">
+            <div class="col-lg-8">
               <div class="b-header-contacts row no-gutters">
                 <div class="col-md-8">
                   <ul class="b-header-menu">
@@ -82,7 +86,7 @@
                 <div class="col-md-4 b-header_big">
                   <!-- <span class="b-header-contacts__item phone">+7 (915) 261-60-24</span><br> -->
                   <span class="b-header-contacts__item phone">+7 (915) 261-66-54</span>
-                  <a href="#" class="text-uppercase b-btn b-btn_color_blue header_phone_btn-blue" rel="nofollow" data-toggle="modal" data-target="#cbModal">Заказать звонок</a> 
+                  <a href="#" class="text-uppercase b-btn b-btn_color_blue header_phone_btn-blue" rel="nofollow" data-toggle="modal" data-target="#cbModal">Заказать звонок</a> <br>
                   <span class="b-header-hours">Пн - Пт: 9:00 - 19:00</span> <br>
                   <span class="b-header-contacts__item email"><a href="mailto:info@cargo-trading.ru" rel="nofollow">info@cargo-trading.ru</a></span> <br>
                 </div>

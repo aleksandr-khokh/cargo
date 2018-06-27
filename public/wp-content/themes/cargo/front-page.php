@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="b-work-map-line">
+<section class="b-work-map-line d-none d-lg-block">
   <div class="container">
     <div class="row">
       <div class="col b-work-map-line__inner">
@@ -13,82 +13,96 @@
   </div>
 </section>
 
-  <section class="b-services-line">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="b-services-line__header">
-            <h2 class="text-center">Мы работаем как с юридическими, так и с физическими лицами.</h2>
-          </div>
-          <div class="col w1-3">
+<section class="b-services-line">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="b-services-line__header">
+          <h2 class="text-center">Мы работаем как с юридическими, так и с физическими лицами.</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-lg-8">
+        <div class="row">
+          <div class="col-12 col-sm-6">
             <a class="b_service_link" href="/sbornye-gruzy">Доставка сборных грузов</a>
+          </div>
+          <div class="col-12 col-sm-6">
             <a class="b_service_link" href="/tamozhennoe-oformlenie">Таможенное оформление</a>
+          </div>
+          <div class="col-12 col-sm-6">
             <a class="b_service_link" href="/perevozka-generalnykh-gruzov">Доставка генеральных грузов</a>
           </div>
-          <div class="col w1-3">
+          <div class="col-12 col-sm-6">
             <a class="b_service_link" href="/services/oversize">Доставка негабаритных грузов</a>
+          </div>
+          <div class="col-12 col-sm-6">
             <a class="b_service_link" href="/perevozka-opasnyh-gruzov">Доставка опасных грузов</a>
+          </div>
+          <div class="col-12 col-sm-6">
             <a class="b_service_link" href="/morskie-kontejnernye-perevozki">Морские контейнерные перевозки</a>
           </div>
-          <div class="col w1-3">
-            <div class="b-country-geography fixedsticky">
-              <div class="b-country-geography__header">
-                География перевозок
-              </div>
-              <?php
-              $menu = wp_nav_menu( array(
-                'theme_location'  => 'country',
-                'container'       => 'div',
-                'container_class' => '',
-                'container_id'    => '',
-                'menu_class'      => 'menu row',
-                'fallback_cb'     => 'wp_page_menu',
-                'items_wrap'      => '<ul id="%1$s" class="%2$s" role="navigation">%3$s</ul>',
-                'depth'           => 2,
-                'echo' => 0
-              ) );
-              $menu = str_replace('menu-item ', 'menu-item nav-item col-6 b-country-geography-list__item', $menu);
-              $menu = str_replace('<a', '<a class="nav-link"', $menu);
-              echo $menu;
-              ?>
-            </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="b-country-geography fixedsticky">
+          <div class="b-country-geography__header">
+            География перевозок
           </div>
+          <?php
+          $menu = wp_nav_menu( array(
+            'theme_location'  => 'country',
+            'container'       => 'div',
+            'container_class' => '',
+            'container_id'    => '',
+            'menu_class'      => 'menu row',
+            'fallback_cb'     => 'wp_page_menu',
+            'items_wrap'      => '<ul id="%1$s" class="%2$s" role="navigation">%3$s</ul>',
+            'depth'           => 2,
+            'echo' => 0
+          ) );
+          $menu = str_replace('menu-item ', 'menu-item nav-item col-6 b-country-geography-list__item', $menu);
+          $menu = str_replace('<a', '<a class="nav-link"', $menu);
+          echo $menu;
+          ?>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="b-order-line">
-    <div class="container">
-      <div class="row">
-        <div class="col w1-2">
-          <div class="b-order-line__header">
-            Оставьте заявку на расчет стоимости доставки груза
-          </div>
-          <form class="b-form js-form-fake">
-            <input class="b-form__input" name="" placeholder="Контактная информация*" type="text" readonly="" />
-            <input class="b-form__input" name="" placeholder="Характеристики груза*" type="text" readonly="" />
-            <input class="b-form__input" name="" placeholder="Услуги*" type="text" readonly="" />
-            <div class="b-btn b-btn_color_yellow">
-              Получить расчет
-            </div>
-          </form>
+<section class="b-order-line">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <div class="b-order-line__header">
+          Оставьте заявку на расчет стоимости доставки груза
         </div>
-        <div class="col w1-2">
-          <div class="b-order-line__info">
-            <p>
-              <b>“Карго-Трейдинг”</b>- логистическая компания оказывающая услуги по международной перевозке грузов и таможенному оформлению.
-            </p>
-            <p>
-              Доставка товаров из Европы, Америки и Китая в Россию, таможенное декларирование, сбор и консолидация грузов, практические решения в сфере ВЭД, временное хранение на нашем складе, доставка сборных грузов, перевозка опасных и негабаритных грузов - это лишь часть услуг.
-            </p>
+        <form class="b-form js-form-fake">
+          <input class="b-form__input" name="" placeholder="Контактная информация*" type="text" readonly="" />
+          <input class="b-form__input" name="" placeholder="Характеристики груза*" type="text" readonly="" />
+          <input class="b-form__input" name="" placeholder="Услуги*" type="text" readonly="" />
+          <div class="b-btn b-btn_color_yellow">
+            Получить расчет
           </div>
+        </form>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="b-order-line__info">
+          <p>
+            <b>“Карго-Трейдинг”</b>- логистическая компания оказывающая услуги по международной перевозке грузов и таможенному оформлению.
+          </p>
+          <p>
+            Доставка товаров из Европы, Америки и Китая в Россию, таможенное декларирование, сбор и консолидация грузов, практические решения в сфере ВЭД, временное хранение на нашем складе, доставка сборных грузов, перевозка опасных и негабаритных грузов - это лишь часть услуг.
+          </p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <?=do_shortcode('[advantages]');?>
+<?=do_shortcode('[advantages]');?>
 
 <section class="b-schema-line">
   <div class="container">
