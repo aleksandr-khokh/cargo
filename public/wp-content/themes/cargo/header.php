@@ -52,10 +52,12 @@
       <div id="toggle-button" class="d-block d-lg-none fixed-top">
         <!-- Menu Button -->
         <button class="menu-btn">&#9776; Меню</button>
+        <span class="phone-button text-right">+7911 321 321 2</span>
       </div>
 
       <div class="d-lg-none mobile-header">
-        
+        <a href="/"><img alt="" class="b-header__logo-img_big b-header_big" src="/frontend/img/logo.png" /></a><a href="/"><img alt="" class="b-header__logo-img_small b-header_small" src="/frontend/img/logo_small.png" /></a>
+        <span class="b-work-since">Работаем с 1998 года</span>
       </div>
 
       <header class="d-none d-lg-block b-header"><!-- все содержимое -->

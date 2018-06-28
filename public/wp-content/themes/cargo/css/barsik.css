@@ -221,21 +221,7 @@ padding:30px 0}
 .b-services-line__item{margin-top:15px}
 .b-services-line__link{color:#fff;
 font-size:.18rem}
-.b-advantages-line{background:#2a9dea url("../img/b-advantages-line_bg.png") repeat top center;
-  height:375px;
-  padding-top:30px;
-  font-weight:700;
-  text-align:center
-}
 
-.b-advantages-line__item{
-  padding-left:.5vw;
-  padding-right:.5vw
-}
-
-.b-advantages-line__text{padding-top:20px;
-color:#fff;
-font-size:.14rem}
 .b-order-line{
   background:#0b2a5e url("../img/b-order-line_bg.png") no-repeat top center;
   background-size:cover;

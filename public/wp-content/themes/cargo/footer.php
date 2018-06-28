@@ -1,14 +1,14 @@
   <footer class="b-footer">
     <div class="container">
       <div class="row">
-        <div class="col-lg-5 b-footer__left">
+        <div class="col-12 col-md-5 b-footer__left">
           <a href="/">
-            <img alt="" class="b-footer__logo-img" src="/frontend/img/logo.png">
+            <img class="b-footer__logo-img" src="/frontend/img/logo.png" alt="">
           </a>
         </div>
-        <div class="col-lg-7">
+        <div class="col-md-7">
           <div class="row">
-            <div class="col-lg-4">
+            <div class="col-md-6">
               <ul class="b-footer-list b-footer-list_top">
                 <li class="b-footer-list__item"><a href="dostavka-gruzov-iz-evropy">Доставка грузов из Европы</a></li>
                 <li class="b-footer-list__item"><a href="dostavka-gruzov-iz-kitaya">Доставка грузов из Китая</a></li>
@@ -17,7 +17,7 @@
                <a href="/otzyvy" class="review-link">Отзывы клиентов</a>
                <a href="/news" class="review-link">Новости и статьи</a>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-6">
               <ul class="b-footer-list b-footer-list_top">
                 <li class="b-footer-list__item"><a href="sbornye-gruzy">Доставка сборных грузов</a></li>
                 <li class="b-footer-list__item"><a href="tamozhennoe-oformlenie">Таможенное оформление</a></li>
@@ -26,7 +26,7 @@
                 <li class="b-footer-list__item"><a href="perevozka-opasnyh-gruzov/">Перевозка опасных грузов</a></li>
               </ul>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-12 col-lg-4">
               <div class="b-footer__phone">
                 8 (915) 261 60 24
               </div>
