@@ -1,14 +1,64 @@
 .b-footer
+  background: $white
   font-size: 12px
+  color: $blue
+  padding: 15px 0
+  width: 100%
+  overflow: hidden
+  z-index: 800
+  transform: translateY(0)
+  transition: all .4s
+  @media(max-width: 992px)
+    background: darken($blue, 5)
+    color: $white
 
-.b-footer__phone
-  font-size: 19px
+  &-list
+    li a
+      @media(max-width: 992px)
+        @include link-white
 
-.b-footer__email
-  font-size: 14px
+  .b-footer-review-link
+    display: block
+    margin-top: 15px
+    @media(max-width: 992px)
+      @include link-white
 
-.b-footer__left::before
-  right: 25%
 
-.b-footer__skype
-  font-size: 20px
+  &__phone
+    font-size: 19px
+    margin-bottom: 0
+
+  &__email
+    font-size: 14px
+
+  &__left::before
+    content: ""
+    display: block
+    width: 1000%
+    height: 200%
+    position: absolute
+    top: -15px
+    right: 25%
+    background: $blue
+    z-index: -1
+    transform: skewX(-25deg)
+    box-shadow: 30px 2px 5px $shadow inset
+
+    @media(max-width: 992px)
+      display: none
+
+  &__skype
+    font-size: 20px
+    a
+      @media(max-width: 992px)
+        @include link-white
+
+  &__logo-img
+    margin: 10px 0 10px 0
+    max-width: 100%
+
+  &__adress
+    margin: 15px 0 10px
+    a
+      @media(max-width: 992px)
+        @include link-white

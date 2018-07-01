@@ -12,6 +12,7 @@ var gulp = require('gulp'),
 gulp.task('watch', function () {
     livereload.listen();
     gulp.watch('frontend/sass/*.sass', gulp.series('sass'));
+    gulp.watch('frontend/sass/*.scss', gulp.series('sass'));
     gulp.watch('public/wp-content/themes/cargo/**/*.php').on('change', livereload.changed);
     gulp.watch('public/wp-content/themes/cargo/css/*.css').on('change', livereload.changed);
     gulp.watch('public/wp-content/themes/cargo/js/*.js').on('change', livereload.changed);
@@ -21,6 +22,10 @@ gulp.task('sass', function () {
     return gulp.src('frontend/sass/concat.sass')
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('public/wp-content/themes/cargo/css/'));
 });

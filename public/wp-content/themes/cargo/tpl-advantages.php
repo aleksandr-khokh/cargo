@@ -7,7 +7,7 @@ Template Name: Шаблон страницы с преимуществами
 <?php get_header(); ?>
 
 <div class="container">
-  <div class="row">
+  <div class="row d-none d-lg-block">
     <div class="col">
       <?php breadcrumb_bootstrap(); ?>
     </div>
@@ -25,7 +25,7 @@ Template Name: Шаблон страницы с преимуществами
     endif;
     ?>
     </div>
-    <div class="col-12 col-lg-4">
+    <div class="d-none d-lg-block col-lg-4">
       <div class="b-country-geography fixedsticky">
         <div class="b-country-geography__header">
           География перевозок

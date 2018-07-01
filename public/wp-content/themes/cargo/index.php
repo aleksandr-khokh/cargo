@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="container">
-  <div class="row">
+  <div class="row d-none d-lg-block">
     <div class="col">
       <?php breadcrumb_bootstrap(); ?>
     </div>

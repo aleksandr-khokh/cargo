@@ -45,7 +45,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-4">
+      <div class="d-none d-lg-block col-lg-4">
         <div class="b-country-geography fixedsticky">
           <div class="b-country-geography__header">
             География перевозок
@@ -102,51 +102,7 @@
   </div>
 </section>
 
-<?php //do_shortcode('[advantages]');?>
-
-<section class="b-advantages-line">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="b-advantages-line__header">
-          Наши преимущества
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12 col-md-6 col-lg mb-3">
-        <img src="/frontend/img-content/b-advantages-line_1.png" alt="Грузовик">
-        <div class="b-advantages-line__text">
-          Быстрые сроки доставки
-        </div> 
-      </div>
-      <div class="col-12 col-md-6 col-lg mb-3">
-        <img src="/frontend/img-content/b-advantages-line_2.png" alt="">
-        <div class="b-advantages-line__text">
-          Возможность отправки груза от 1 кг
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg mb-3">
-        <img src="/frontend/img-content/b-advantages-line_3.png" alt="">
-        <div class="b-advantages-line__text">
-          Грамотное оформление документов и таможенная очистка грузов
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg mb-3">
-        <img src="/frontend/img-content/b-advantages-line_4.png" alt="">
-        <div class="b-advantages-line__text">
-          Минимизация расходов клиента
-        </div>
-      </div>
-      <div class="col-12 col-md-12 col-lg mb-3">
-        <img src="/frontend/img-content/b-advantages-line_5.png" alt="">
-        <div class="b-advantages-line__text">
-          Надежность и постоянство присутствия на рынке ВЭД
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<?php do_shortcode('[advantages]');?>
 
 <section class="b-schema-line">
   <div class="container">

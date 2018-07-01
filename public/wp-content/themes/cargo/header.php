@@ -14,9 +14,9 @@
   <meta name="msapplication-TileImage" content="/frontend/img/link-icon/windows-touch-icon-144x144.png" />
   <meta name="msapplication-TileColor" content="#fff" />
 
-  <title><?php echo get_field('title'); ?></title>
+  <title><?=get_field('title') ?></title>
   <meta name="keywords" content="">
-  <meta name="description" content="<?php the_field('description'); ?>">
+  <meta name="description" content="<?=get_field('description') ?>">
   <?php wp_head(); ?>
 
 </head>
@@ -50,9 +50,14 @@
   <main id="container">
 
       <div id="toggle-button" class="d-block d-lg-none fixed-top">
-        <!-- Menu Button -->
-        <button class="menu-btn">&#9776; Меню</button>
-        <span class="phone-button text-right">+7911 321 321 2</span>
+        <div class="row">
+          <div class="col-4">
+            <button class="menu-btn">&#9776; Меню</button>
+          </div>
+          <div class="col-8 text-right">
+            <span class="phone-button text-right">+7 (915) 261-60-24</span>
+          </div>
+        </div>
       </div>
 
       <div class="d-lg-none mobile-header">

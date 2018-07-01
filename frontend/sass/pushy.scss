@@ -13,15 +13,20 @@ $menu_width: 200px !default;
     height: 100%;
     top: 0;
     z-index: 9999;
-    background: #191918;
+    background: darken($blue, 10);
     overflow: auto;
     -webkit-overflow-scrolling: touch; /* enables momentum scrolling in iOS overflow elements */
 
+    li{
+        width: 100%;
+    }
+
     a{
         display: block;
-        color: #b3b3b1;
-        padding: 15px 30px;
+        color: $ultra-light-blue;
+        padding: 10px 30px;
         text-decoration: none;
+        font-size: 12px;
     }
 
     a:hover{

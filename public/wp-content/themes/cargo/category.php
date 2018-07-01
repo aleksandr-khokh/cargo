@@ -26,11 +26,9 @@
         <?php endwhile; ?>
       </div>
     </div>
-    <div class="col-12 col-lg-4">
+    <div class="d-none d-lg-block col-lg-4">
       <div class="b-country-geography fixedsticky">
-        <div class="b-country-geography__header">
-          География перевозок
-        </div>
+        <div class="b-country-geography__header">География перевозок</div>
         <?php
         $menu = wp_nav_menu( array(
           'theme_location'  => 'country',
