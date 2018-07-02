@@ -79,14 +79,16 @@
         <div class="b-order-line__header">
           Оставьте заявку на расчет стоимости доставки груза
         </div>
-        <form class="b-form js-form-fake">
-          <input class="b-form__input" name="" placeholder="Контактная информация*" type="text" readonly="" />
-          <input class="b-form__input" name="" placeholder="Характеристики груза*" type="text" readonly="" />
-          <input class="b-form__input" name="" placeholder="Услуги*" type="text" readonly="" />
-          <div class="b-btn b-btn_color_yellow">
-            Получить расчет
-          </div>
-        </form>
+        <a data-fancybox data-src="#hidden-content" href="javascript:;">
+          <form class="b-form js-form-fake">
+            <input class="b-form__input" name="" placeholder="Контактная информация*" type="text" readonly="" />
+            <input class="b-form__input" name="" placeholder="Характеристики груза*" type="text" readonly="" />
+            <input class="b-form__input" name="" placeholder="Услуги*" type="text" readonly="" />
+            <div class="b-btn b-btn_color_yellow">
+              Получить расчет
+            </div>
+          </form>
+        </a>
       </div>
       <div class="col-12 col-lg-6">
         <div class="b-order-line__info">

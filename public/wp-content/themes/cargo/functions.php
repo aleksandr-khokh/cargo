@@ -11,9 +11,10 @@ function my_style_method () {
     wp_enqueue_style( 'bootstrap', get_template_directory_uri() . "/css/bootstrap-cargo.css", '', '', '' );
     wp_enqueue_style( 'barsik', get_template_directory_uri() . "/css/barsik.css", '', '', '' );
     wp_enqueue_style( 'norm', get_template_directory_uri() . "/css/norm.css", '', '', '' );
-    wp_enqueue_style( 'jq-fancybox', get_template_directory_uri() . "/css/jquery.fancybox.css", '', '', '' );
-    wp_enqueue_style( 'jq-fancybox-button', get_template_directory_uri() . "/css/jquery.fancybox-buttons.css", '', '', '' );
-    wp_enqueue_style( 'jq-fancybox-thumbs', get_template_directory_uri() . "/css/jquery.fancybox-thumbs.css", '', '', '' );
+    wp_enqueue_style( 'fancybox', "https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css", '', '', '' );
+    // wp_enqueue_style( 'jq-fancybox', get_template_directory_uri() . "/css/jquery.fancybox.css", '', '', '' );
+    // wp_enqueue_style( 'jq-fancybox-button', get_template_directory_uri() . "/css/jquery.fancybox-buttons.css", '', '', '' );
+    // wp_enqueue_style( 'jq-fancybox-thumbs', get_template_directory_uri() . "/css/jquery.fancybox-thumbs.css", '', '', '' );
     wp_enqueue_style( 'style', get_template_directory_uri() . "/css/concat.css", '', '', '' );
 }
 
@@ -25,10 +26,11 @@ function my_scripts_method()
     wp_enqueue_script('popper', "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js", '', '', 'true');
     wp_enqueue_script('bootstrap', "https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js", '', '', 'true');
     wp_enqueue_script('pushy', get_template_directory_uri() . "/js/pushy.min.js", '', '', 'true');
-    wp_enqueue_script('fancybox-pack', get_template_directory_uri() . "/js/jquery.fancybox.pack.js", '', '', 'true');
-    wp_enqueue_script('fancybox-buttons', get_template_directory_uri() . "/js/jquery.fancybox-buttons.js", '', '', 'true');
-    wp_enqueue_script('fancybox-media', get_template_directory_uri() . "/js/jquery.fancybox-media.js", '', '', 'true');
-    wp_enqueue_script('fancybox-thumbs', get_template_directory_uri() . "/js/jquery.fancybox-thumbs.js", '', '', 'true');
+    wp_enqueue_script('fancybox', "https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js", '', '', 'true');
+    // wp_enqueue_script('fancybox-pack', get_template_directory_uri() . "/js/jquery.fancybox.pack.js", '', '', 'true');
+    // wp_enqueue_script('fancybox-buttons', get_template_directory_uri() . "/js/jquery.fancybox-buttons.js", '', '', 'true');
+    // wp_enqueue_script('fancybox-media', get_template_directory_uri() . "/js/jquery.fancybox-media.js", '', '', 'true');
+    // wp_enqueue_script('fancybox-thumbs', get_template_directory_uri() . "/js/jquery.fancybox-thumbs.js", '', '', 'true');
     wp_enqueue_script('fixedsticky', get_template_directory_uri() . "/js/jquery.fixedsticky.min.js", '', '', 'true');
     wp_enqueue_script('sticky', get_template_directory_uri() . "/js/jquery.header-sticky.min.js", '', '', 'true');
     wp_enqueue_script('scroll', get_template_directory_uri() . "/js/jquery.scroll-to.min.js", '', '', 'true');
@@ -62,11 +64,11 @@ function shipping_date(){
     $date =  date('d', strtotime('next saturday')) . " " . $month[date('m', strtotime('next saturday'))];
     
 
-    echo '<div class="row"><div class="col-12"><p class="i-align_center data-desc"><b>Ближайшая отправка сборного контейнера в Россию <span class="blue-date">' . $date . ' июня</span></b></p></div></div>';
+    echo '<div class="row"><div class="col-12"><p class="i-align_center data-desc"><b>Ближайшая отправка сборного контейнера в Россию <span class="blue-date">' . $date . ' июля</span></b></p></div></div>';
 
     return ob_get_clean();
 }
-add_shortcode('shipping', 'shipping_date');
+add_shortcode('shipping_date', 'shipping_date');
 
 function true_remove_category_from_category($cat_url) {
     $cat_url = str_replace('/category', '', $cat_url);
@@ -122,3 +124,44 @@ function the_advantages(){
     return ob_get_clean();
 }
 add_shortcode('advantages', 'the_advantages');
+
+function country_class( $country ){
+  switch ($country) {
+    case "dostavka-gruzov-iz-ameriki":
+      echo "b-country-geography_country_usa";
+      break;
+    case "dostavka-gruzov-iz-kitaya":
+      echo "b-country-geography_country_china";
+      break;
+    case "dostavka-gruzov-iz-chehii":
+      echo "b-country-geography_country_czech";
+      break;
+    case "dostavka-gruzov-iz-evropy":
+      echo "b-country-geography_country_evro";
+      break;
+    case "dostavka-gruzov-finlyandiya":
+      echo "b-country-geography_country_finland";
+      break;
+    case "dostavka-gruzov-germaniya":
+      echo "b-country-geography_country_germany";
+      break;
+    case "dostavka-gruzov-italiya":
+      echo "b-country-geography_country_italy";
+      break;
+    case "dostavka-gruzov-latviya":
+      echo "b-country-geography_country_latvia";
+      break;
+    case "dostavka-gruzov-iz-litvy":
+      echo "b-country-geography_country_lithuania";
+      break;
+    case "dostavka-gruzov-iz-polshy":
+      echo "b-country-geography_country_poland";
+      break;
+    case "dostavka-gruzov-iz-shvecii":
+      echo "b-country-geography_country_sweden";
+      break;
+    case "dostavka-gruzov-ispaniya":
+      echo "b-country-geography_country_spain";
+      break;
+  }
+}

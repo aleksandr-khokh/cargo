@@ -1,7 +1,7 @@
 <?php
 
 if(isset($_POST['name'])){$username = htmlspecialchars($_POST['name']);}
-$phone = htmlspecialchars($_POST['phone']);
+if(isset($_POST['phone'])){$phone = htmlspecialchars($_POST['phone']);}
 
 
 if ( $phone ) {

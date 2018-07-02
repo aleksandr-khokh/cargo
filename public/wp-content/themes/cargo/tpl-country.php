@@ -14,7 +14,7 @@ Template Name: Шаблон Страны
   </div>
   
   <div class="b-shipping mt-3 mt-lg-0">
-    <?=do_shortcode( '[shipping]' )?>
+    <?=do_shortcode( '[shipping_date]' )?>
   </div>
 
   <div class="row">
@@ -24,13 +24,13 @@ Template Name: Шаблон Страны
       <div class="row">
         <div class="col-12 col-lg-5">
 
-          <div class="row">
-            <div class="col-4 col-lg-4">
+          <div class="row mb-3">
+            <div class="col-3 col-lg-4">
               <img src="/frontend/img/link-icon/duration.svg" class="delivery-icon" alt="Время доставки" width="58">
             </div>
-            <div class="col-8 col-lg-8">
+            <div class="col-9 col-lg-8">
               <span class="grey">Время в пути:</span><br>
-              <span class="big"><?=get_field('delivery_time') ?></span>
+              <span class=""><?=get_field('delivery_time') ?></span>
             </div>
           </div>
 
@@ -71,40 +71,22 @@ Template Name: Шаблон Страны
     </div>
 
     <?php
-    if (have_posts()):
+      if (have_posts()):
         while (have_posts()): the_post();
 
-            the_content();
+          the_content();
 
         endwhile;
-    endif;
+      endif;
     ?>
     </div>
     <div class="d-none d-lg-block col-lg-4">
-      <div class="b-country-geography fixedsticky">
-        <div class="b-country-geography__header">
-          География перевозок
-        </div>
-        <?php
-        $menu = wp_nav_menu( array(
-          'theme_location'  => 'country',
-          'container'       => 'div',
-          'container_class' => '',
-          'container_id'    => '',
-          'menu_class'      => 'menu row',
-          'fallback_cb'     => 'wp_page_menu',
-          'items_wrap'      => '<ul id="%1$s" class="%2$s" role="navigation">%3$s</ul>',
-          'depth'           => 2,
-          'echo' => 0
-        ) );
-        $menu = str_replace('menu-item ', 'menu-item nav-item col-6 b-country-geography-list__item', $menu);
-        $menu = str_replace('<a', '<a class="nav-link"', $menu);
-        echo $menu;
-        ?>
-      </div>
+      <?php get_sidebar(); ?>
     </div>
   </div>
 
 </div>
+
+<?=do_shortcode('[advantages]');?>
 
 <?php get_footer(); ?>

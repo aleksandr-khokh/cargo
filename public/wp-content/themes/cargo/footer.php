@@ -81,6 +81,73 @@
   </div>
 </div>
 
+
+<div class="order" style="display: none;" id="hidden-content">
+  <div class="container">
+    <form class="b-form b-form_order ajax_form call-back-form" method="post" action="/wp-content/themes/cargo/mail.php">
+      <div class="row">
+        <div class="col-12">
+          <h4 class="b-form__header">Оставьте заявку на расчет стоимости доставки груза</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="b-form-group-line">
+            <input class="b-form__input" placeholder="Название компании" type="text" name="company">
+            <input class="b-form__input" placeholder="Контактное лицо*" type="text" name="name" required="true">
+            <input class="b-form__input" placeholder="Телефон*" type="text" name="phone" required="true">
+            <input class="b-form__input" placeholder="E-mail*" type="email" name="email" required="true">
+          </div>
+          <div class="b-form-group-line">
+            Нужен ли транспорт?
+            <label class="b-form__label b-form__label_radio"><input class="b-form__radio" name="radioTransport" value="Да" type="radio"><i class="b-icon-form b-icon-form_radio"></i>Да</label>
+            <label class="b-form__label b-form__label_radio"><input checked="" class="b-form__radio" name="radioTransport" value="Нет" type="radio"><i class="b-icon-form b-icon-form_radio"></i>Нет</label>
+          </div>
+          <div class="b-form-group-line">
+            Таможенное оформление?
+            <label class="b-form__label b-form__label_radio"><input class="b-form__radio" name="radioTam" value="Да" type="radio"><i class="b-icon-form b-icon-form_radio"></i>Да</label>
+            <label class="b-form__label b-form__label_radio"><input checked="" class="b-form__radio" name="radioTam" value="Нет" type="radio"><i class="b-icon-form b-icon-form_radio"></i>Нет</label>
+          </div>
+          <div class="b-form-group-line">
+            Наличие контракта на поставку?
+            <label class="b-form__label b-form__label_radio"><input class="b-form__radio" name="radioContract" value="Да" type="radio"><i class="b-icon-form b-icon-form_radio"></i>Да</label>
+            <label class="b-form__label b-form__label_radio"><input checked="" class="b-form__radio" name="radioContract" value="Нет" type="radio"><i class="b-icon-form b-icon-form_radio"></i>Нет</label>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="b-form-group-line">
+            <input class="b-form__input i-hide required" placeholder="Особенность груза*" type="text" name="item-spec">
+            <input class="b-form__input" placeholder="Наименование груза*" type="text" name="item-name">
+            <input class="b-form__input" placeholder="Торговая марка*" type="text" name="item-tm">
+            <input class="b-form__input" placeholder="Производитель*" type="text" name="item-vendor">
+            <input class="b-form__input" placeholder="Код ТН ВЭД" type="text" name="item-tnved">
+            <input class="b-form__input" placeholder="Общий вес груза, (кг)*" type="text" name="item-weight">
+            <input class="b-form__input" placeholder="Количество мест" type="text" name="item-place">
+            <input class="b-form__input" placeholder="Габаритные размеры (д*ш*в)*" type="text" name="item-volume">
+            <input class="b-form__input" placeholder="Стоимость груза" type="text" name="item-cost">
+          </div>
+          <div class="b-form-group-line">
+            <input class="b-form__input" placeholder="Место отправления*" type="text" name="item-start">
+            <input class="b-form__input" placeholder="Место назначения" type="text" name="item-end">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col i-align_right">
+          <input class="b-btn b-btn_color_yellow" value="Отправить" type="submit" /> 
+        </div>
+      </div>
+    </form>
+
+    <!-- result -->
+    <div class="form-result red">
+      <p>Спасибо за Вашу заявку!</p>
+      <hr class="bg-red">
+      <p>Мы перезвоним Вам в ближайшее время</p>
+    </div>
+  </div>
+</div>
+
 <?php wp_footer(); ?>
 
 </body>
