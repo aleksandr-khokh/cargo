@@ -72,6 +72,8 @@
   </div>
 </section>
 
+<?=do_shortcode('[advantages]');?>
+
 <section class="b-order-line">
   <div class="container">
     <div class="row">
@@ -104,9 +106,17 @@
   </div>
 </section>
 
-<?php do_shortcode('[advantages]');?>
-
 <section class="b-schema-line">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <?=do_shortcode('[instagram-feed]');?>
+      </div>
+    </div>
+  </div>
+  <br>
+  <hr>
+  <br>
   <div class="container">
 
     <?php
