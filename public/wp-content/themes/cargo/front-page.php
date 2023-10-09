@@ -35,7 +35,7 @@
             <a class="b_service_link" href="/perevozka-generalnykh-gruzov">Доставка генеральных грузов</a>
           </div>
           <div class="col-12 col-sm-6">
-            <a class="b_service_link" href="/services/oversize">Доставка негабаритных грузов</a>
+            <a class="b_service_link" href="/perevozka-negabaritnykh-gruzov">Доставка негабаритных грузов</a>
           </div>
           <div class="col-12 col-sm-6">
             <a class="b_service_link" href="/perevozka-opasnyh-gruzov">Доставка опасных грузов</a>
@@ -107,16 +107,7 @@
 </section>
 
 <section class="b-schema-line">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <?=do_shortcode('[instagram-feed]');?>
-      </div>
-    </div>
-  </div>
-  <br>
-  <hr>
-  <br>
+  
   <div class="container">
 
     <?php

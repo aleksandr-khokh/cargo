@@ -8,29 +8,30 @@
           <div class="row">
             <div class="d-none d-md-block col-md-6 col-lg">
               <ul class="b-footer-list b-footer-list_top">
-                <li class="b-footer-list__item"><a href="dostavka-gruzov-iz-evropy">Доставка грузов из Европы</a></li>
-                <li class="b-footer-list__item"><a href="dostavka-gruzov-iz-kitaya">Доставка грузов из Китая</a></li>
-                <li class="b-footer-list__item"><a href="dostavka-gruzov-iz-ameriki">Доставка грузов из США</a></li>
+                <li class="b-footer-list__item"><a href="/dostavka-gruzov-iz-evropy">Доставка грузов из Европы</a></li>
+                <li class="b-footer-list__item"><a href="/dostavka-gruzov-iz-kitaya">Доставка грузов из Китая</a></li>
+                <li class="b-footer-list__item"><a href="/dostavka-gruzov-iz-ameriki">Доставка грузов из США</a></li>
               </ul>
                <a href="/otzyvy" class="b-footer-review-link">Отзывы клиентов</a>
                <a href="/news" class="b-footer-review-link">Новости и статьи</a>
             </div>
             <div class="d-none d-lg-block col-lg">
               <ul class="b-footer-list b-footer-list_top">
-                <li class="b-footer-list__item"><a href="sbornye-gruzy">Доставка сборных грузов</a></li>
-                <li class="b-footer-list__item"><a href="tamozhennoe-oformlenie">Таможенное оформление</a></li>
-                <li class="b-footer-list__item"><a href="perevozka-generalnykh-gruzov">Генеральные грузы</a></li>
-                <li class="b-footer-list__item"><a href="perevozka-negabaritnykh-gruzov">Негабаритные грузы</a></li>
-                <li class="b-footer-list__item"><a href="perevozka-opasnyh-gruzov/">Перевозка опасных грузов</a></li>
+                <li class="b-footer-list__item"><a href="/sbornye-gruzy">Доставка сборных грузов</a></li>
+                <li class="b-footer-list__item"><a href="/tamozhennoe-oformlenie">Таможенное оформление</a></li>
+                <li class="b-footer-list__item"><a href="/perevozka-generalnykh-gruzov">Генеральные грузы</a></li>
+                <li class="b-footer-list__item"><a href="/perevozka-negabaritnykh-gruzov">Негабаритные грузы</a></li>
+                <li class="b-footer-list__item"><a href="/perevozka-opasnyh-gruzov/">Перевозка опасных грузов</a></li>
               </ul>
             </div>
             <div class="col-md-6 col-lg">
-              <p class="b-footer__phone">8 (915) 261 60 24</p>
+              <p class="b-footer__phone">+7 (495) 743-02-64</p>
               <p class="b-footer__email">info@cargo-trading.ru</p>
               <div class="b-footer__adress">
-                127473, г.Москва, <a href="contacts" title="Контакты">Проспект Маршала Жукова 76/2</a>
+                127473, г.Москва, <a href="/contacts" title="Контакты">Проспект Маршала Жукова 76/2</a>
               </div>
-              <!--div class="b-footer__pitech"></div-->
+              <div class="b-footer__link">Разработка <a href="//mad-dog.ru">mad-dog.ru</a></div>
+              <!-- <div class="b-footer__pitech"></div> -->
             </div>
           </div>
         </div>
@@ -63,7 +64,7 @@
           </div>
         </div><!-- modal-body -->
 
-        <div class="modal-footer">
+        <div class="modal-footer justify-content-center">
           <input type="submit" id="btn-submit" class="btn b-btn_color_blue" value="Отправить заявку">
         </div><!-- modal-footer -->
         <input id="prodId" name="modal_hidden_form" type="hidden" value="z8C6e">
@@ -150,6 +151,23 @@
 </div>
 
 <?php wp_footer(); ?>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116305823-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-116305823-3');
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter30726213 = new Ya.Metrika({ id:30726213, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/30726213" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'JXJDsijvuo';
+var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);})();</script>
+<!-- {/literal} END JIVOSITE CODE -->
 </body>
 </html>

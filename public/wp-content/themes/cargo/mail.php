@@ -27,7 +27,7 @@ if(isset($_POST['item_end'])){$item_end = htmlspecialchars($_POST['item_end']);}
 
 if ( $phone && $modal_form == 'z8C6e') {
 
-  $to = 'office@spaceweb.studio';
+  $to = 'info@cargo-trading.ru';
   $from='call-back@carg-trading.ru';
 
   $message = 'Телефон: ' . $phone;

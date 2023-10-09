@@ -21,6 +21,10 @@
 
 </head>
 <body>
+  <?php
+  $user_agent = $_SERVER['HTTP_USER_AGENT'];
+  if (stripos($user_agent, 'MSIE') == true){ header ("Location: /ie.php"); }
+  ?>
   <!-- Pushy Menu -->
   <nav class="pushy pushy-right">
     <div class="pushy-content">
@@ -55,7 +59,7 @@
             <button class="menu-btn">&#9776; Меню</button>
           </div>
           <div class="col-8 text-right">
-            <span class="phone-button text-right">+7 (915) 261-60-24</span>
+            <span class="phone-button text-right">+7 (495) 743-02-64</span>
           </div>
         </div>
       </div>
@@ -79,25 +83,25 @@
                 <div class="col-md-8">
                   <ul class="b-header-menu">
                     <li class="b-header-menu__item">
-                      <a href="transportnaya-kompaniya" class="b-header-menu__link"><i class="b-icon b-icon_transportnaya-kompaniya b-header_big"></i>О нас</a>
+                      <a href="/transportnaya-kompaniya" class="b-header-menu__link"><i class="b-icon b-icon_transportnaya-kompaniya b-header_big"></i>О нас</a>
                     </li>
                     <li class="b-header-menu__item">
-                      <a href="tamozhennoe-oformlenie" class="b-header-menu__link"><i class="b-icon b-icon_tamozhennoe-oformlenie b-header_big"></i>Таможенное оформление</a>
+                      <a href="/tamozhennoe-oformlenie" class="b-header-menu__link" title="Таможенное оформление"><i class="b-icon b-icon_tamozhennoe-oformlenie b-header_big"></i>Таможенное оформление</a>
                     </li>
                     <li class="b-header-menu__item">
-                      <a href="contacts" class="b-header-menu__link"><i class="b-icon b-icon_contacts b-header_big"></i>Контакты</a>
+                      <a href="/contacts" class="b-header-menu__link"><i class="b-icon b-icon_contacts b-header_big"></i>Контакты</a>
                     </li>
                   </ul>
 
                 </div>
                 <div class="col-md-4 b-header_big">
                   <!-- <span class="b-header-contacts__item phone">+7 (915) 261-60-24</span><br> -->
-                  <span class="b-header-contacts__item phone">+7 (915) 261-66-54</span>
+                  <span class="b-header-contacts__item phone">+7 (495) 743-02-64</span>
                   <a href="#" class="text-uppercase b-btn b-btn_color_blue header_phone_btn-blue" rel="nofollow" data-toggle="modal" data-target="#cbModal">Заказать звонок</a> <br>
                   <span class="b-header-hours">Пн - Пт: 9:00 - 19:00</span> <br>
                   <span class="b-header-contacts__item email"><a href="mailto:info@cargo-trading.ru" rel="nofollow">info@cargo-trading.ru</a></span> <br>
                 </div>
-                <span class="b-header-contacts__item phone b-header_small">+7 (915) 261-60-24<br><a href="mailto:info@cargo-trading.ru" class="email" rel="nofollow">info@cargo-trading.ru</a></span>
+                <span class="b-header-contacts__item phone b-header_small">+7 (495) 743-02-64<br><a href="mailto:info@cargo-trading.ru" class="email" rel="nofollow">info@cargo-trading.ru</a></span>
                 
               </div>
             </div>
